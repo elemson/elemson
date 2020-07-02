@@ -1,4 +1,5 @@
 @import url("../../css/partials/_variables.css");
+@import url("../../css/partials/_global.css");
 
 .navbar-brand {
   padding: 0 0 0 5rem;
@@ -18,6 +19,7 @@
 .nav-bar .active {
   background: var(--gradient-color);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -25,4 +27,34 @@
   background: var(--gradient-color);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Banner Area */
+.site-main .site-banner {
+}
+
+.site-title h3 {
+  margin-top: 25%;
+  font-weight: 500;
+}
+
+.site-title h3::after {
+  display: inline-block;
+  content: "";
+  width: 18vh;
+  height: 1px;
+  background: black;
+  margin-left: 5%;
+}
+
+.site-title h1 {
+  font-size: 4rem;
+}
+
+.site-title h4 {
+  font-size: 1.4rem;
+}
+
+.title-text {
+  font: normal bold 50px/72px var(--roboto);
 }
